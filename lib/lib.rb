@@ -4,5 +4,5 @@ class Card
         @rank = rank
     end
 
-    attr_reader :suit#, :rank    
+    # attr_reader :suit, :rank    
 end
