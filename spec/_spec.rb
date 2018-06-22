@@ -10,7 +10,7 @@ require_relative './../lib/lib.rb'
 describe Card do
     describe '#suit' do
         it "has a suit" do
-            expect(Card.new 'hearts', 3).suit.to eq 'hearts'
+            expect(Card.new('hearts', 3).suit).to eq 'hearts'
         end
     end
 end
