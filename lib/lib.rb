@@ -4,5 +4,11 @@ class Card
         @rank = rank
     end
 
-    attr_reader :suit, :rank    
+    attr_reader :suit, :rank
+end
+
+class Hand
+    def initialize cards
+        @cards = cards
+    end
 end
