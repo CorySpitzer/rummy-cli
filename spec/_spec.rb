@@ -21,7 +21,7 @@ describe Card do
 end
 
 describe Hand do
-    describe '#rank' do
+    describe '#cards' do
         it 'has cards' do
             card1 = Card.new('hearts', 3)
             card2 = Card.new('spades', 5)
@@ -29,3 +29,23 @@ describe Hand do
         end
     end
 end
+
+describe Deck do
+    describe '#cards' do
+        it 'has cards' do
+            card1 = Card.new('hearts', 3)
+            card2 = Card.new('spades', 5)
+            expect(Deck.new([card1, card2]).cards).to eq [card1, card2]
+        end
+    end
+end
+
+# describe Board do
+#     describe '#cards' do
+#         it 'has cards' do
+#             card1 = Card.new('hearts', 3)
+#             card2 = Card.new('spades', 5)
+#             expect(Deck.new([card1, card2]).cards).to eq [card1, card2]
+#         end
+#     end
+# end

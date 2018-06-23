@@ -14,3 +14,11 @@ class Hand
 
     attr_accessor :cards
 end
+
+class Deck
+    def initialize cards
+        @cards = cards
+    end
+
+    attr_reader :cards
+end
