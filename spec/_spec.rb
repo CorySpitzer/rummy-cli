@@ -9,12 +9,23 @@ require_relative './../lib/lib.rb'
 
 describe Card do
     describe '#suit' do
-        it "has a suit" do
+        it 'has a suit' do
             expect(Card.new('hearts', 3).suit).to eq 'hearts'
         end
-
-        it "has a rank" do
+    end
+    describe '#rank' do
+        it 'has a rank' do
             expect(Card.new('hearts', 3).rank).to eq 3
+        end
+    end
+end
+
+describe Hand do
+    describe '#rank' do
+        it 'has cards' do
+            card1 = Card.new('hearts', 3)
+            card2 = Card.new('spades', 5)
+            expect(Hand.new([card1, card2]).hand).to eq [card1, card2]
         end
     end
 end
