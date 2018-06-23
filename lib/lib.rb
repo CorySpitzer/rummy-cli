@@ -22,3 +22,19 @@ class Deck
 
     attr_reader :cards
 end
+
+class Player
+    def initialize name
+        @name = name
+    end
+
+    attr_reader :name
+end
+
+# Cards that have been played
+# class Pile
+#     def initialize cards, owner
+#         @cards = cards
+#         @owner = owner
+#     end
+# end
