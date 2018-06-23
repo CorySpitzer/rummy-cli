@@ -25,7 +25,7 @@ describe Hand do
         it 'has cards' do
             card1 = Card.new('hearts', 3)
             card2 = Card.new('spades', 5)
-            expect(Hand.new([card1, card2]).hand).to eq [card1, card2]
+            expect(Hand.new([card1, card2]).cards).to eq [card1, card2]
         end
     end
 end
