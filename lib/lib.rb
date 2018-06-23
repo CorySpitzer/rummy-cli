@@ -32,9 +32,11 @@ class Player
 end
 
 # Cards that have been played
-# class Pile
-#     def initialize cards, owner
-#         @cards = cards
-#         @owner = owner
-#     end
-# end
+class Pile
+    def initialize cards, player
+        @cards = cards
+        @player = player
+    end
+
+    attr_reader :player
+end

@@ -50,17 +50,16 @@ describe Player do
 end
 
 
-# describe Pile do
-#     describe '#cards' do
-#         it 'has cards' do
-#             card1 = Card.new('hearts', 3)
-#             card2 = Card.new('hearts', 4)
-#             player1 = Player.new
-#             expect(Pile.new([card1, card2], player1).cards).to eq [card1, card2]
-#             expect(Pile.new([card1, card2], player1).player).to eq player1
-#         end
-#     end
-# end
+describe Pile do
+    describe '#player' do
+        it 'has a player' do
+            card1 = Card.new('hearts', 3)
+            card2 = Card.new('hearts', 4)
+            player1 = Player.new 'Cory'
+            expect(Pile.new([card1, card2], player1).player).to eq player1
+        end
+    end
+end
 
 # describe Board do
 #     describe '#cards' do
